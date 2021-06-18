@@ -13,8 +13,10 @@ const personalMovieDB = {
         }
     },
     toggleVisibleMyDB: function() {
-        if (privat === false) {
-            privat == true;
+        if (personalMovieDB.privat) {
+            personalMovieDB.privat == false;
+        } else {
+            personalMovieDB.privat == true;
         }
     },
     showMyDB: function(hidden) {
